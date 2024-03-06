@@ -1,0 +1,18 @@
+<html>
+<script>
+function  move(n,source,target,temp)
+{
+	if (n==1)
+	{
+		document.write('move'+source+'to'+target+'</br>');
+	}
+	else
+	{
+		move(n-1,source,temp,target);
+		move(1,source,target,temp);
+		move(n-1,temp,target,source);
+	}
+}
+move(7,"1","2","3")
+</script>
+</html>
