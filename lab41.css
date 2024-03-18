@@ -1,0 +1,41 @@
+div
+{
+   background:radial-gradient(cyan 0%, transparent 20%, salmon 40%);
+   background-repeat:repeat;
+   border-radius:200px;
+   -webkit-border-radius:200px;
+   -moz-border-radius:200px;
+   color:red;
+   height:400px;
+   width:400px;
+}
+  #heart {
+      display:block;
+      width: 100px;
+      height: 90px;
+    }
+    #heart:before,
+    #heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+    #egg {
+      position: relative;
+      width: 126px;
+      height: 180px;
+      background-color: red;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
