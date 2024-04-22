@@ -1,0 +1,30 @@
+<script>
+	let a = [];
+	let associative = {id:"D10755525", name:"John"};
+	let y = {"id":"D10755525", "name":"John"};
+	let z = {id:"D10755525", "Last name":"John"};
+	let w = {"John Smith":233434, "Scott Cave": 3432212};
+
+	w["Johnson"] = 23543221;
+	document.write(w["John Smith"]  + "<br>");
+	for(let key in w)
+		document.write("key=" + key + ",value=" + w[key] + "<br>");
+	//for(let v of w) document.write("value=" + v + "<br>");
+
+	for(let key in w)
+		if(w[key] == 34322122)
+			document.write(key + "has 34322122<br>")
+
+	document.write("size of w = " + w.length + "<br>");
+	var Game = {
+	  x:1,
+	  y:2,
+	  move:founction(u,v){document.write(Game.x + "," +game.y + "<br>");}
+	}
+	Game.move(1,2)
+	Game.move = function(u,v){ }
+
+	setTimeout(functionname,2000);//2000//scheduled task
+	setTimeout(function(){...},1500);
+	setTimeout("Game.move(" + x + "," + y + "),2333);
+	var a = [3,4,5,2,1];
